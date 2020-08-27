@@ -7,5 +7,6 @@ if Rails.env.production?
       region: Rails.application.credentials.dig(:aws, :region),
     }
     config.fog_directory = Rails.application.credentials.dig(:aws, :bucket)
+    config.assets_host = "http://【Domain Nameの値】"
   end
 end
